@@ -1,0 +1,20 @@
+@import 'libs/bootstrap-reboot.min';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import 'base/variables';
+
+.container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'bloskc/promo';
+@import 'bloskc/buttons';
+@import 'bloskc/title';
+@import 'bloskc/advantages';
+@import 'bloskc/work';
+@import 'bloskc/agent';

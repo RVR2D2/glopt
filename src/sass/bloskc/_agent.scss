@@ -1,0 +1,33 @@
+.agent {
+    padding-top: 79px;
+    padding-bottom: 75px;
+    min-height: 342px;
+    background: url('../img/agent-bg.png') center (center / cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__icons {
+        width: 102px;
+        height: 102px;
+        margin: 0 auto;
+        border-radius: 100px;
+        border: 1px solid #ffffff;
+        padding: 21px 27px 30px 27px;
+        align-items: center;
+    }
+    &__subtitle {
+        margin-top: 20px;
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__descr {
+        padding-top: 22px;
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 300;
+        text-align: center;
+    }
+}

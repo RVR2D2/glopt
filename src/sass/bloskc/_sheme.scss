@@ -1,0 +1,47 @@
+.sheme {
+    min-height: 454px;
+    background-color: #f3f3f3;
+    padding-top: 50px;
+    padding-bottom: 46px;
+    &__wrapper {
+        margin-top: 31px;
+        justify-content: space-between;
+    }
+    &__item {
+        min-width: 249px;
+        text-align: center;
+        margin-right: 33px;
+    }
+    &__img {
+        width: 51px;
+        height: 57px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        padding-top: 11px!important;
+        text-align: center;
+        color: $main-color;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    &__descr {
+        color: #3a3a3a;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 267px;
+    }
+}
+.sheme__wrapper-col {
+    display: flex;
+    justify-content: space-between;
+}
+.sheme__wrapper-col-2 {
+   display: flex;
+   justify-content: center;
+   padding-top: 43px;
+//    margin-right: 10px;
+}

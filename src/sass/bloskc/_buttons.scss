@@ -9,6 +9,9 @@
     text-transform: uppercase;
     border: none;
     outline: none;
+    &:hover {
+        background-color: #dc5238;
+    } 
 }
 
 #bt {

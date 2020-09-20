@@ -1,0 +1,442 @@
+#menu__toggle {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+    .header__logo {
+        width: 75px;
+        height: 80px;
+    }
+    .menu {
+        font-size: 12px;
+    }
+    .menu__item {
+        margin-right: 13px;
+    }
+    .header__contacts-phone  {
+        font-size: 15px;
+    }
+    .wrapper {
+        margin-top: 40px;
+    }
+    .promo__subtitle {
+        font-size: 61px;
+    }
+    .promo__suptitle {
+        font-size: 36px;
+    }
+    .promo__card-text  {
+        font-size: 13px;
+    }
+    img.work__img {
+        width: 300px;
+    }
+    .work__subtitle {
+        font-size: 17px;
+    }
+    .work__descr {
+        font-size: 13px;
+    }
+    .prices__item {
+        width: 216px;
+        height: 390px;
+    }
+    .prices__title {
+        font-size: 12px;
+    }
+    .prices__text {
+        font-size: 13px;
+    }
+    .prices__span {
+        font-size: 24px;
+    }
+    .prices__descr {
+        font-size: 13px;
+    }
+    .sheme__item {
+        margin-right: -4px;
+    }
+    .sheme__descr {
+        font-size: 13px;
+        max-width: 232px;
+    }
+    .linear__footer {
+        width: 950px;
+        margin-top: 30px;
+    }
+    .footer__title {
+        font-size: 14px;
+        margin-right: 121px;
+    }
+    #menu__toggle {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .header__logo {
+        width: 70px;
+        height: 70px;
+    }
+    .menu {
+        font-size: 7px;
+    }
+    .menu__item {
+        margin-right: 8px;
+    }
+    .header__contacts-phone {
+        font-size: 8px;
+    }
+    .header__contacts {
+        font-size: 7px;
+        padding-top: 29px;
+    }
+    .btn {
+        width: 124px;
+        font-size: 8px;
+    }
+    .wrapper {
+        margin-top: 30px;
+    }
+    .promo {
+        &__subtitle {
+            font-size: 44px;
+        }
+        &__suptitle {
+            font-size: 24px;
+        }
+        &__linear {
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        &__card-text {
+            font-size: 9px;
+        }
+    }
+    .title {
+        font-size: 18px;
+    }
+    .advantages {
+        &__subtitle {
+            font-size: 10px;
+        }
+        &__descr {
+            font-size: 9px;
+        }
+    }
+    .work {
+        &-item__subtitle {
+            font-size: 12px;
+            width: 85%;
+        }
+    }
+    img.work__img  {
+        width: 200px;
+    }
+    .work__subtitle {
+        font-size: 10px;
+    }
+    .work__descr {
+        font-size: 9px;
+    }
+    .agent {
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+    }
+    .prices {
+        padding-bottom: 0;
+        &__wrapper {
+            flex-direction: column;    
+        }
+        &__item {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+    .title__form {
+        font-size: 23px;
+    }
+    input {
+        width: 200px;
+    }
+    .agent {
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
+    .sheme {
+        &__item {
+            min-width: 174px;
+        }
+        &__subtitle {
+            font-size: 12px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+    .questions {
+        &__item {
+            min-width: 660px;
+        }
+        &__subtitle {
+            font-size: 13px;
+        }
+        &__span {
+            font-size: 15px;
+        }
+        &__form {
+            margin-left: 20px;
+            margin-top: 10px;
+            justify-content: end;
+        }
+        &__input {
+            width: 610px;
+        }
+    }
+    .footer__logo {
+        width: 70px;
+        height: 70px;
+        margin-top: 15px;
+    }
+    .linear__footer {
+        width: 653px;
+    }
+    .header__contacts {
+        padding-top: 37px;
+    }
+    .footer__title {
+        font-size: 7px;
+    }
+    #menu__toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    #menu__toggle {
+        opacity: 0;
+      
+        &:checked ~ {
+          .menu__btn > span {
+            transform: rotate(45deg);
+      
+            &::before {
+              top: 0;
+              transform: rotate(0);
+            }
+      
+            &::after {
+              top: 0;
+              transform: rotate(90deg);
+            }
+          }
+      
+          .menu__box {
+            visibility: visible;
+            left: 0;
+          }
+        }
+      }
+      
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+      
+        > span {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #616161;
+          transition-duration: .25s;
+      
+          &::before, &::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #616161;
+            transition-duration: .25s;
+          }
+      
+          &::before {
+            content: '';
+            top: -8px;
+          }
+      
+          &::after {
+            content: '';
+            top: 8px;
+          }
+        }
+      }
+      
+      .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .1);
+        transition-duration: .25s;
+        text-align: center;
+      }
+      
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+      
+        &:hover {
+          background-color: #CFD8DC;
+        }
+      }
+      .header {
+          justify-content: space-around;
+          &__contacts {
+              font-size: 10px;
+              padding-top: 23px;
+          }
+      }
+      .promo {
+          &__title {
+              font-size: 18px;
+          }
+          &__subtitle {
+              font-size: 32px;
+          }
+          &__suptitle {
+              font-size: 19px;
+          }
+          &__card-text {
+              font-size: 7px;
+          }
+      }
+      .advantages {
+          &__subtitle {
+              font-size: 9px;
+          }
+          &__descr {
+              font-size: 8px;
+          }
+      }
+      img.work__img {
+          width: 140px;
+      }
+      .agent__descr {
+        font-size: 9px;
+    }
+    input {
+        width: 150px;
+        font-size: 10px;
+    }
+    .sheme {
+        &__item {
+            min-width: 120px;
+        }
+        &__subtitle {
+            font-size: 10px;
+        }
+        &__descr {
+            font-size: 9px;
+        }
+    }  
+    .carousel-inner {
+        width: 93%;
+    }  
+    .questions {
+        &__item {
+            min-width: 540px;
+        }
+        &__subtitle {
+            font-size: 10px;
+        }
+        &__span {
+            font-size: 12px;
+        }
+        &__form {
+            margin-left: 36px;
+            margin-top: 10px;
+            justify-content: end;
+        }
+        &__input {
+            width: 460px;
+        }
+    }
+    .slider__wrapper {
+        width: 512px;
+    }
+    .linear__footer {
+        width: 481px;
+    }
+    .footer__logo {
+        width: 50px;
+        height: 50px;
+        margin-right: -31px;
+    }
+    .footer__title {
+        margin-right: 27px;
+    }
+    .header__contacts-phone {
+        font-size: 10px;
+    }
+    .header__contacts {
+        font-size: 10px;
+        padding-top: 28px;
+    }
+    .footer__title {
+        font-size: 8px;
+    }
+    .footer {
+        &-btn {
+            display: none;
+        }
+    }
+    .col__1,
+    .col__2,
+    .col__3 {
+        font-size: 9px;
+    }
+    .footer-img {
+        margin-bottom: -14px;
+        display: none;
+    }
+    
+
+}
+
+
